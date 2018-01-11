@@ -42,28 +42,7 @@ function Slider(sSelector){
         s.stop = function(){
             if(timeoutId) clearTimeout(timeoutId);
         }
-
-    s.arrowPrev.mouseenter(function(){
-         		stop();
-    			});   
-    s.arrowPrev.mouseleave(function(){
-        		start();  
-    			});   
-        
-    s.arrowNext.mouseenter(function(){
-        		stop();
-    			});    
-    s.arrowNext.mouseleave(function(){
-        		start();
-   				});    
-          
-    s.slidesControls.mouseenter(function(){
-        		stop();
-    			});    
-    s.slidesControls.mouseleave(function(){
-        		start();
-    			}); 
-	s.slidesControls.click(function(){
+    s.slidesControls.click(function(){
 				s.showSlide(this, 0);
 				});
 	s.arrowPrev.click(function(){
@@ -72,6 +51,27 @@ function Slider(sSelector){
 	s.arrowNext.click(function(){
 				s.showSlide(this, 1);
 				});
+    s.arrowPrev.mouseenter(function(){
+         		s.stop();
+    			});   
+    s.arrowPrev.mouseleave(function(){
+        		s.start();  
+    			});   
+        
+    s.arrowNext.mouseenter(function(){
+        		s.stop();
+    			});    
+    s.arrowNext.mouseleave(function(){
+        		s.start();
+   				});    
+          
+    s.slidesControls.mouseenter(function(){
+        		s.stop();
+    			});    
+    s.slidesControls.mouseleave(function(){
+        		s.start();
+    			}); 
+	
 		
 	
 }
