@@ -15,7 +15,7 @@
     padding: 10px;
     position: absolute;
     box-sizing: border-box;
-    top: 50%;
+    top: 45%;
 	z-index:1;
 	font-size: 3rem;
 }
@@ -24,9 +24,6 @@
 	color: #fff;
 	text-decoration: none;
 	user-select: none;
-	-ms-user-select: none; 
-    -moz-user-select: none; 
-    -webkit-user-select: none;
 
 }
 .preview__arrow_prev {
@@ -55,6 +52,8 @@
 	border: 1px solid #fff;
 	background: rgba( 0, 0, 0, 0.5);
 	border-radius: 50%;
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px;
 	box-sizing: border-box;
 	display: inline-block;
 	height: 10px;
