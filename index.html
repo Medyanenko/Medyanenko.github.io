@@ -1,21 +1,182 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>My portfolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </head>
-<body>
-	<a href="/homeWorkTemp">HomeWorkTemp</a>
-	<br>
-	<a href="/antistress">Antistress</a>
-	<br>
-	<a href="/landing">Landing example</a>
-	<br>
-	<a href="/testBigDig">TestBigDig</a>
-	<br>
-	<a href="/mail_parfums">Mail_Parfums</a>
-	<br>
-	<a href="/mail_seminar">Mail_Seminar</a>
+<body data-spy="scroll" data-target=".navbar">
+	<div class="b-container">
+		<!-- Menu-->
+		<div class="b-container__header navbar navbar-inverse navbar-fixed-top wow fadeInDown" data-wow-duration="1.5s", data-wow-delay="2.2s", style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInDown;">
+			<div class="b-header container">
+				<div class="b-header__logo">
+					<a href="#" class="b-logo navbar-brand">
+						<h2 class="b-logo__title">Tatyana Kydriavska</h2>
+					</a>
+				</div>
+				<div class="b-header__sandwich navbar-header">
+					<button type="button" class="b-sandwich navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="b-sandwich__iconbar icon-bar"></span>
+					<span class="b-sandwich__iconbar icon-bar"></span>
+					<span class="b-sandwich__iconbar icon-bar"></span>
+					</button>
+				</div>
+				<div class="b-header__menu collapse navbar-collapse navbar-right" id="myNavbar">
+					<ul class="b-menu nav navbar navbar-nav">
+					  <li class="b-menu__item"><a href="#home" class="b-menu__link"><h2 class="b-menu__title">home</h2></a></li>
+					  <li class="b-menu__item"><a href="#about" class="b-menu__link"><h2 class="b-menu__title">about me</h2></a></li>
+					  <li class="b-menu__item"><a href="#portfolio" class="b-menu__link"><h2 class="b-menu__title">portfolio</h2></a></li>
+					  <li class="b-menu__item"><a href="#contacts" class="b-menu__link"><h2 class="b-menu__title">contacts</h2></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
+		<div class="b-container__section">
+			<div class="b-container__stop" id="home"></div>
+			<div class="b-home jumbotron">
+				<div class="b-home__heading">
+					<div class="b-heading">
+						<div class="b-heading__text">
+							<h3 class="b-text-title wow fadeInDown" data-wow-duration="1.5s", data-wow-delay="2.2s", style="visibility: visible; animation-name: fadeInDown;">Hi, my name is Tatyana</h3>
+							<h2 class="b-text-description">I’m front-end developer!</h2>
+							<div class="b-heading__link">
+							<a class="b-link__btn btn wow fadeInUp" data-wow-duration="1.5s", data-wow-delay="2.2s", style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;" href="#portfolio_v">
+							<svg class="b-link__svg" width="277" height="62">
+	    						<defs>
+	        						<linearGradient id="grad1">
+		            					<stop offset="0%" stop-color="#FF8282"/>
+		            					<stop offset="100%" stop-color="#E178ED"/>
+	        						</linearGradient>
+	    						</defs>
+	    						<rect class="b-link__rect" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+	  						</svg>
+								<span class="b-link__span">View portfolio</span></a>
+						</div>
+						<div class="b-heading__mouse wow fadeInUp" data-wow-duration="1.5s", data-wow-delay="2.2s", style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;">
+							<div class="b-mouse-wheel"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!--About-->
+		<div class="b-container__section">
+			<div class="b-container__stop" id="about"></div>
+			<div class="b-section b-bg-color">
+				<div class="b-section__heading">
+					<div class="b-heading">
+						<h2 class="b-heading__title wow fadeInDown" data-wow-duration="1.5s", data-wow-delay="0.5s", style="visibility: visible; animation-name: fadeInDown;">About me</h2>
+					</div>
+				</div>
+				<div class="b-section__info container">
+					<div class="b-info row ">
+						<div class="b-info__article col-md-4 wow fadeInLeft" data-wow-duration="1.5s", data-wow-delay="0.5s", style="visibility: visible; animation-name: fadeInLeft;">
+							<img src="images/myFoto.jpg" class="b-info__img b-info__img_my img-thumbnail img-responsive">
+						</div>
+						<div class="b-info__article col-md-8 wow fadeInRight" data-wow-duration="1.5s", data-wow-delay="0.5s", style="visibility: visible; animation-name: fadeInRight;">
+							<div class="b-article">
+								<p class="b-article__description"> Hello there! Thank you for visiting my site! I’m front-end developer. If you are looking for a person who adore his work and always bring it to the end, feel free to reach me out.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Portfolio-->
+		<div class="b-container__section">
+			<div class="b-container__stop" id="portfolio"><a name="portfolio_v"></a></div>
+			<div class="b-section">
+				<div class="b-section__heading">
+					<div class="b-heading">
+						<h2 class="b-heading__title wow fadeInDown" data-wow-duration="1.5s", data-wow-delay="3s", style="visibility: visible; animation-name: fadeInDown;">Portfolio</h2>
+					</div>
+				</div>
+				<div class="b-section__info container">
+					<div class="b-info row">
+						<div class="b-info__article col-md-6">
+							<a href="https://medyanenko.github.io/mail_seminar/" class="b-info__link" target="_blank"><img src="images/portfolio/mail.png" class="b-info__img img-thumbnail img-responsive"><div class="b-info__icon"><i class="b-info__icon_fa fa fa-eye"></i></div></a>	
+						</div>
+						<div class="b-info__article col-md-6">
+							<a href="https://medyanenko.github.io/homeWorkTemp/" class="b-info__link" target="_blank"><img src="images/portfolio/elena.png" class="b-info__img img-thumbnail img-responsive"><div class="b-info__icon"><i class="b-info__icon_fa fa fa-eye"></i></div></a>	
+						</div>
+					</div>
+					<div class="b-info row">
+						<div class="b-info__article col-md-6">
+							<a href="https://medyanenko.github.io/antistress/" class="b-info__link" target="_blank"><img src="images/portfolio/anti.png" class="b-info__img img-thumbnail img-responsive"><div class="b-info__icon"><i class="b-info__icon_fa fa fa-eye"></i></div></a>
+						</div>
+						<div class="b-info__article col-md-6">
+							<a href="https://medyanenko.github.io/testBigDig/" class="b-info__link" target="_blank"><img src="images/portfolio/BigDig.png" class="b-info__img img-thumbnail img-responsive"><div class="b-info__icon"><i class="b-info__icon_fa fa fa-eye"></i></div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Contacts-->
+		<div class="b-container__section">
+			<div class="b-container__stop" id="contacts"></div>
+			<div class="b-section b-bg-color">
+				<div class="b-section__info container">
+					<div class="b-info b-info_pad row">
+						<div class="b-info__contact col-md-4">
+							<div class="b-contact">
+								<div class="b-contacts__icon"><i class="fa fa-map-marker"></i></div>
+								<div class="b-contacts__info">Uktaine, Kyiv</div>
+							</div>	
+						</div>
+						<div class="b-info__contact col-md-4">
+							<div class="b-contact">
+								<div class="b-contacts__icon"><i class="fa fa-envelope"></i></div>
+								<div class="b-contacts__info"><a href="mailto:t.kudryavska@gmail.com" class="b-contacts__info-link">t.kudryavska@gmail.com</a></div>
+							</div>	
+						</div>
+						<div class="b-info__contact col-md-4">
+							<div class="b-contact">
+								<div class="b-contacts__icon"><i class="fa fa-skype"></i></div>
+								<div class="b-contacts__info">Medyanenko</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<div class="b-container__section">
+			<div class="b-section">
+			<div class="b-section__footer">
+				<div class="b-footer">
+					<div class="b-footer__socials">
+						<div class="b-socials">
+							<ul class="b-socials-buttons">
+							    <li class="b-socials-buttons__item"><a href="https://www.facebook.com/medyanenko" class="b-socials-buttons__link" target="_blank"><i class="b-info__icon_fb fa fa-facebook" aria-hidden="true"></i></a></li>
+							    <li class="b-socials-buttons__item"><a href="https://www.linkedin.com/in/tetianakudriavska/" class="b-socials-buttons__link" target="_blank"><i class="b-info__icon_in fa fa-facebook" aria-hidden="true"></i></a></li>
+							    <li class="b-socials-buttons__item"><a href="https://github.com/Medyanenko" class="b-socials-buttons__link" target="_blank"><i class="b-info__icon_git fa fa-facebook" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="b-footer__copyright">
+						<div class="b-copyright">
+							<div class="b-copyright__text">&#169 I did it myself :) 2018</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
